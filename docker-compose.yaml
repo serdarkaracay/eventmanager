@@ -6,7 +6,7 @@ services:
       context: backend
       dockerfile: Dockerfile
     environment:
-      - VIRTUAL_HOST=starter-node-vue.localhost/api,starter-node-vue.localhost/api/*
+      - VIRTUAL_HOST=event-manager.localhost/api,event-manager.localhost/api/*
       - VIRTUAL_HOST_WEIGHT=1
     expose:
       - 3000
@@ -19,7 +19,7 @@ services:
       dockerfile: Dockerfile
     environment:
       - HOST=0.0.0.0
-      - VIRTUAL_HOST=starter-node-vue.localhost
+      - VIRTUAL_HOST=event-manager.localhost
       - VIRTUAL_HOST_WEIGHT=0
     volumes:
       - ./frontend/src:/app/src
@@ -35,7 +35,7 @@ services:
     networks:
       default:
         aliases:
-          - starter-node-vue.localhost
+          - event-manager.localhost
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     ports:
