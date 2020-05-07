@@ -12,6 +12,7 @@ services:
       - 3000
     volumes:
       - ./backend/src:/app/src
+      - ./backend/events.json:/app/events.json
 
   frontend:
     build:

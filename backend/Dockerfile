@@ -9,6 +9,8 @@ RUN npm install
 
 ADD bin ./bin
 
+COPY events.json .
+
 
 VOLUME [ "/app/src" ]
 
