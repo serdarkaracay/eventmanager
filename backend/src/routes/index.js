@@ -3,7 +3,7 @@ var router = express.Router();
 var eventList = require("../../events.json");
 
 router.get("/", function (req, res, next) {
-  res.send("respond with a resource");
+  res.send("respond with a test");
 });
 
 router.post("/event/:id*?", function (req, res, next) {
