@@ -7,8 +7,6 @@ router.get("/", function (req, res, next) {
 });
 
 router.post("/event/:id*?", function (req, res, next) {
-  debugger;
-
   if (req.params.id > 0)
     return res.json(
       JSON.parse(JSON.stringify(eventList.events)).filter(
