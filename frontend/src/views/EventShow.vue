@@ -48,7 +48,6 @@ export default {
     EventService.getEvent(this.id)
       .then((response) => {
         this.event = response.data[0];
-        console.log(this.event);
       })
       .catch((error) => {
         console.log(error.response);

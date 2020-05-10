@@ -1,5 +1,5 @@
 <template>
-  <div class="nav">
+  <div id="nav" class="nav">
     <router-link class="brand" to="/"> Event Management</router-link>
     <nav>
       <router-link :to="{ name: 'event-list' }">List</router-link> |
